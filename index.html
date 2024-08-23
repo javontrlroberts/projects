@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Style Cheat Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=News+Cycle:wght@400;700&family=Noticia+Text:wght@400;700&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="headlines">
+        <h1>Javon's Cascade Style Cheat Sheet</h1>
+        <h2>CSS Typography Quick Reference</h2>
+    </header>
+    <main class="cheat-sheet">
+        <p>This CSS Cheat Sheet serves as a concise reference for the various color values used to style web elements. It provides a quick overview of opacity, HSL, RGB, hexadecimal, and named color values, offering a valuable tool for easily recalling and implementing different coloring options for foreground and background elements, enhancing the visual appeal of websites.</p>
+        <table>
+            <thead>
+                <tr class="thead-categories">
+                    <th scope="col">Color Type</th>
+                    <th scope="col">Syntax</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+                <tr>
+                    <td>Named Color</td>
+                    <td>color:<br>background-color: </td>
+                    <td>Consists of standard, easy-to-remember color keywords</td>
+                    <td>span {
+                        background-color: saddlebrown;
+                    }</td>
+                </tr>
+                <tr>
+                    <td>Hexidecimal</td>
+                    <td>#RRGGBB</td>
+                    <td>hex colors begin with (#) followed by 3 or 6 characters representing red, blue, and green</td>
+                    <td>.black {
+                        background: #000;
+                    }</td>
+                </tr>
+                <tr>
+                    <td>RGB</td>
+                    <td>rgb(255 255 255)</td>
+                    <td>Colors expressed in Red-Green-Blue (RGB), typically sequenced between 0 and 255</td>
+                    <td>#teal {
+                        color: rgb(0, 128, 128);
+                    }</td>
+                </tr>
+                <tr>
+                    <td>HSL</td>
+                    <td>hsl(120, 60%, 70%)</td>
+                    <td>Colors expressed according to Hue, Saturation, and Lightness; w/the first num representing the degree of hue between 0 and 360; and the second and third num being percentages representing saturation and lightness between 0% and 100%</td>
+                    <td>footer {
+                        background-color: hsl(0 100% 50%);
+                    }</td>
+                </tr>
+                <tr></tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th class="alpha-row" scope="row" colspan="4">Opacity and Alpha (Transparency of a Color)</th>
+                </tr>
+                <tr class="tfoot-categories">
+                    <th scope="col">Color Type</th>
+                    <th scope="col">Syntax</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+                <tr>
+                    <td>&lt;alpha-value&gt</td>
+                    <td>rgb(34 12 64 / 60%) <span>or</span><br>hsla(34, 100%, 50%, 0.1)</td>
+                    <td>A fourth value representing the "Alpha" value  that can be a number between 0 (fully transparent) and 1.0 (fully opaque) with decimal values in-between; or percentages between 0% (fully transparent) and 100% (fully opaque)</td>
+                    <td>.opaque .transparent {
+                        color: rgba(234, 45, 98, 0.33);
+                        background-color: hsla(90 80% 50% / 50%);
+                    }</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    
+</body>
+</html>

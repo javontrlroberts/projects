@@ -1,0 +1,124 @@
+/* root styles */
+
+:root {
+
+    --clr-white: #ffffff;
+    --clr-grey: #4e3d3dc0;
+    --clr-dark-grey: #1f1f1f;
+    --clr-black: #141414;
+
+    --fs-heading: 4.5rem;
+    --fs-body: 1.35rem;
+    --ff-heading: "Noticia Text", serif;
+    --ff-body: "News Cycle", sans-serif;
+    --ff-footer: "Courier Prime", monospace;
+    --ff-caption: "PT Sans Caption", sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-1000: 1000;
+
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+body {
+    background-image: url(./assets/images/old-newspaper.jpg);
+}
+
+/* Typeface */
+
+header {
+    font-family: var(--ff-heading);
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /* margin-bottom: 0.75em; */
+    background-image: url(./assets/images/torn-newspaper.jpg);
+    opacity: 0.75;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-1000);
+    color: #301d16;
+}
+
+h2 {
+    display: inline;
+    font-size: 2em;
+    font-weight: var(--fw-1000);
+    color: var(--clr-white);
+    border: 2px dotted #301d16;
+    
+}
+
+p {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    color: var(--clr-dark-grey);
+    border-bottom: 1px double var(--clr-dark-grey);
+    padding: 1em .5em;
+    text-align: center;
+    background: rgba(255, 255, 0, 0.397);
+}
+
+table {
+    text-align: justify;
+    font-family: var(--ff-footer);
+}
+
+tr:nth-child(odd) {
+    background-color: #6e2a1191;
+}
+
+tr:nth-child(even) {
+    background-color: var(--clr-grey);
+}
+
+tr,
+td:nth-child(odd) {
+    color: var(--clr-white);
+}
+
+.thead-categories,
+.alpha-row,
+.tfoot-categories {
+    text-align: center;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-caption);
+}
+
+.alpha-row {
+    padding-right: 13.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
